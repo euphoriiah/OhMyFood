@@ -36,7 +36,24 @@ header{
     position: fixed;
     justify-content: center;
 }
-
+nav{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+nav form .nav__title{
+    margin-left: 50px;
+}
+nav form h1{
+    font-size:30px;
+    font-weight:900;
+}
+nav form span{
+    font-size:30px;
+    font-weight:900;
+    align-items: flex-end;
+}
 /*CARD*/
 
 }
