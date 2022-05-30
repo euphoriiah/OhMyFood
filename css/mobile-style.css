@@ -1,5 +1,15 @@
 @media (max-width: 768px) {
 
+/*VARIABLE*/
+:root{
+    --primary-color:#9356DC;
+    --secondary-color:#FF79DA;
+    --tertiary-color: #99E2D0;
+    --background-color:#F6F6F6;
+    --bg-footer-loader: #353535;
+
+}
+
     /*BODY*/
 * {
 box-sizing: border-box;
@@ -54,6 +64,33 @@ nav form span{
     font-weight:900;
     align-items: flex-end;
 }
+.btn{
+	border: none;
+	border-radius: 30px;
+	padding: 0.5em 0;
+	color: white;
+	background: linear-gradient(var(#FF79DA),var(#9356DC));
+	box-shadow: 0 0 16px grey;
+	margin: 1em auto;
+	position: relative;
+	z-index: 1;
+	cursor: pointer;
+	}
+btn ::after{
+    opacity: 0;
+		transition: opacity 500ms;
+		border-radius: 30px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient;
+        box-shadow: 0 3px 6px black;
+		opacity: 0;
+        z-index: -1;
+}
+
 /*CARD*/
 
 }
