@@ -5,6 +5,8 @@
     --primary-color:#9356DC;
     --secondary-color:#FF79DA;
     --tertiary-color: #99E2D0;
+    --tertiary-alt-color:#eaeaea;
+    --variable-grey-color:#cfcfcf;
     --background-color:#F6F6F6;
     --bg-footer-loader: #353535;
 
@@ -39,58 +41,104 @@ header{
     width: 100%;
     flex-direction: column;
 }
-.logo__banner{
+header .logo__banner{
     width: 100%;
     background-color: #FFF;
-    display: flex;
-    position: fixed;
+    position: absolute;
     justify-content: center;
+    margin-top: 10px;
+    display: flex;
+    position: 0;
+}
+header img{
+    width: 60%;
+    margin-left: 90px;
+    padding-bottom: 0;
 }
 nav{
-    margin-top: 100px;
-    display: flex;
+    margin-top: 70px;
     justify-content: center;
     width: 100%;
+    background-color: var(--background-color);
+    padding-bottom: 100px;
+}
+label{
+    display: flex;
+}
+label i{
+    font-size: 20px;
+    margin-top: 15px;
+    background-color: var(--tertiary-alt-color);
+    position: relative;
+    margin-left: 155px;
+    color: rgb(55, 54, 54);
+    z-index: 1;
+}
+form input{
+    width: 100%;
+    background-color: var(--tertiary-alt-color);
+    padding: 15px;
+    padding-left: 180px;
+    border-top-width: 5px;
+    border-color: #fbfbfb25;
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+    position: absolute;
+    
+}
+nav form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 nav form .nav__title{
-    margin-left: 50px;
+    display: flex;
+    justify-content: center;
 }
 nav form h1{
-    font-size:30px;
+    flex-direction: column;
+    width: 100%;
+    font-size:25px;
     font-weight:900;
+    margin-top: 50px;
+    margin-left: 75px;
+}
+nav form h2{
+    width: 100%;
+    font-size: 17px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
 }
 nav form span{
-    font-size:30px;
+    margin-left: 2px;
+
+}
+nav form h1 span{
+    margin-left: 45px;
+    font-size:25px;
     font-weight:900;
-    align-items: flex-end;
 }
-.btn{
+nav form h2 span{
+    font-size: 15px;
+}
+form .btn{
+    width: 50%;
+    margin-left: 120px;
 	border: none;
+    justify-content: center;
+    align-items: center;
 	border-radius: 30px;
-	padding: 0.5em 0;
-	color: white;
-	background: linear-gradient(var(#FF79DA),var(#9356DC));
+    padding-top: 1em;
+    color: var(--background-color);
+	background: linear-gradient(#FF79DA,#9356DC);
 	box-shadow: 0 0 16px grey;
-	margin: 1em auto;
-	position: relative;
-	z-index: 1;
-	cursor: pointer;
+    cursor: pointer;
+    transform: scale(1);
+    transition-duration: 800ms;
 	}
-btn ::after{
-    opacity: 0;
-		transition: opacity 500ms;
-		border-radius: 30px;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background: linear-gradient;
-        box-shadow: 0 3px 6px black;
-		opacity: 0;
-        z-index: -1;
+.btn:hover{
+    transform: scale(1.2);
 }
-
-/*CARD*/
-
+    
 }
