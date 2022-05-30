@@ -193,8 +193,6 @@ main .card__container{
         width: 90%;
         border-radius: 25px;
         box-shadow: #dddcdc 0 0 15px;
-        
-        left: 0;
  }
  main .card__container img {
     display: flex;
@@ -206,22 +204,36 @@ main .card__container{
     margin-left: 7px;
     object-fit: cover;
 }
-section .card .new-sticker{
-    z-index: 1;
+section .card p{
     display: flex;
-    margin-left: 320px;
+    align-items: flex-end;
     justify-content: flex-end;
-    padding: 10px;
+    margin-left: 330px;
     background-color: var(--tertiary-color);
-    width: 20%;
+    width: 90px;
     position:absolute;
+    
 }
 .card .card-title{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.hearts__block i .full-heart{
+.hearts__block i{
+    font-size: 30px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.hearts__block .full-heart{
 display: none;
+}
+.hearts__block:hover .full-heart {
+    display: block;
+    color: rgb(160,88,245);
+    color: linear-gradient(342deg, rgba(160,88,245,1) 0%, rgba(255,135,222,1) 65%)
+
+}
+.hearts__block:hover .empty-heart{
+    display: none;
 }
 }
