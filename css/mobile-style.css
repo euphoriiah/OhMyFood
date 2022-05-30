@@ -141,5 +141,87 @@ form .btn{
 .btn:hover{
     transform: scale(1.2);
 }
+        /*MAIN*/
+
+h1, h3{
+    font-size: large;
+    font-weight: bolder;
+}
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+main .main-section{
+    display: flex;
+    flex-direction: column;
+}
+main .working-element{
+display: flex;
+width: 90%;
+flex-direction: row;
+background-color: var(--background-color);
+border: none; 
+border-radius:20px;
+margin:15px;
+padding-top:20px;
+box-shadow: 0 0 10px rgb(180, 180, 180);
+}
+
+/*RESTAURENT CARDS SECTION*/
+
+main .restaurant__section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     
+}
+main .card__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: var(--background-color);
+    align-items: center;
+}
+ main .card__container .card{       
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #fff;
+        width: 90%;
+        border-radius: 25px;
+        box-shadow: #dddcdc 0 0 15px;
+        
+        left: 0;
+ }
+ main .card__container img {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    max-width: 98%;
+    border-radius: 20px 20px 0 0;
+    margin-top: 5px;
+    margin-left: 7px;
+    object-fit: cover;
+}
+section .card .new-sticker{
+    z-index: 1;
+    display: flex;
+    margin-left: 320px;
+    justify-content: flex-end;
+    padding: 10px;
+    background-color: var(--tertiary-color);
+    width: 20%;
+    position:absolute;
+}
+.card .card-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.hearts__block i .full-heart{
+display: none;
+}
 }
