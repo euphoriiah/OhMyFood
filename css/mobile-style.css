@@ -78,7 +78,7 @@ form input{
     width: 100%;
     background-color: var(--tertiary-alt-color);
     padding: 15px;
-    padding-left: 180px;
+    padding-left: 40%;
     border-top-width: 5px;
     border-color: #fbfbfb25;
     border-left: none;
@@ -102,20 +102,21 @@ nav form h1{
     font-size:25px;
     font-weight:900;
     margin-top: 50px;
-    margin-left: 75px;
+    align-items: center;
 }
 nav form h2{
     width: 100%;
     font-size: 17px;
-    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
     margin-bottom: 30px;
+    align-items: center;
 }
 nav form span{
     margin-left: 2px;
 
 }
 nav form h1 span{
-    margin-left: 45px;
     font-size:25px;
     font-weight:900;
 }
