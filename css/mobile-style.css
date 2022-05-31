@@ -162,17 +162,17 @@ main section h1{
     margin-bottom: 30px;
 }
 main .working-element{
-display: flex;
-width: 80%;
-flex-direction: row;
-align-items: flex-start;
-background-color: var(--background-color);
-border: none; 
-border-radius:20px;
-margin:15px;
-box-shadow: 0 0 10px rgb(180, 180, 180);
-margin-left: 45px;
-transform: scale(1);
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    align-items: flex-start;
+    background-color: var(--background-color);
+    border: none; 
+    border-radius:20px;
+    margin:15px;
+    box-shadow: 0 0 10px rgb(180, 180, 180);
+    margin-left: 45px;
+    transform: scale(1);
 }
 main .working-element:hover{
     background-color: #e5c0db69;
@@ -220,6 +220,7 @@ main .card__container{
     width: 100%;
     background-color: var(--background-color);
     align-items: center;
+    padding-bottom: 50px;
 }
  main .card__container .card{       
         display: flex;
@@ -275,8 +276,11 @@ display: none;
 .hearts__block:hover .full-heart {
     display: block;
     color: rgb(160,88,245);
-    color: linear-gradient(342deg, rgba(160,88,245,1) 0%, rgba(255,135,222,1) 65%);
     animation: heart 1s forwards;
+    text-transform: uppercase;
+	background: linear-gradient(to right, var(--primary-color) 0%, var(--secondary-color) 100%);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 .hearts__block:hover .empty-heart{
     display: none;
@@ -288,5 +292,62 @@ display: none;
     100% {
       opacity: 1;
     }
+}
+.card .card-title .title{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+h3{
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+h4{
+margin-left: 15px;
+margin-top: 0;
+}
+/*FOOTER*/
+h5{
+    font-family: 'Shrikhand';
+    margin-top: 20px;
+    margin-left: 35px;
+    margin-bottom: 5px;
+}
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-footer-loader);
+    color: var(--background-color);
+}
+footer ul{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom:20px;
+    margin-top: 0;
+    
+}
+footer ul li a{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    color: var(--background-color);
+}
+footer ul li p{
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+footer ul li i{
+    margin-top: 5px;
+    margin-right: 8px;
+}
+footer .footer-a__link{
+    margin-bottom: 5px;
+}
+footer .footer__link{
+margin-bottom: 0;
 }
 }
