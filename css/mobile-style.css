@@ -281,6 +281,7 @@ display: none;
 	background: linear-gradient(to right, var(--primary-color) 0%, var(--secondary-color) 100%);
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 .hearts__block:hover .empty-heart{
     display: none;
