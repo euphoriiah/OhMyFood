@@ -160,13 +160,44 @@ main .working-element{
 display: flex;
 width: 90%;
 flex-direction: row;
+align-items: flex-start;
 background-color: var(--background-color);
 border: none; 
 border-radius:20px;
 margin:15px;
-padding-top:20px;
 box-shadow: 0 0 10px rgb(180, 180, 180);
+margin-left: 25px;
+transform: scale(1);
 }
+main .working-element:hover{
+    background-color: #e5c0db69;
+    transform: scale(1.05);
+    color: #9356DC;
+}
+main .working-element i{
+    margin-left: 40px;
+    margin-right: 15px;
+    margin-top: 20px;
+}
+main .working-element .number-circle{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 100%;
+    background-color: var(--primary-color);
+    position: absolute;
+    margin-left: -10px;
+    margin-top: 10px;
+    color: var(--background-color);
+}
+main .working-element .comment{
+ padding-top: 0;
+ align-items: center;
+ margin-top: 20px;
+ color: #000;
+}
+
 
 /*RESTAURENT CARDS SECTION*/
 
@@ -193,16 +224,18 @@ main .card__container{
         width: 90%;
         border-radius: 25px;
         box-shadow: #dddcdc 0 0 15px;
+        margin-top: 20px;
  }
  main .card__container img {
     display: flex;
+    justify-content: center;
     width: 100%;
     height: 200px;
-    max-width: 98%;
     border-radius: 20px 20px 0 0;
     margin-top: 5px;
-    margin-left: 7px;
     object-fit: cover;
+    padding-top: 0;
+    margin-top: 0;
 }
 section .card-picture{
     display: flex;
@@ -233,14 +266,22 @@ section .card .new-sticker{
 }
 .hearts__block .full-heart{
 display: none;
-transform: scale(1);
 }
 .hearts__block:hover .full-heart {
     display: block;
     color: rgb(160,88,245);
     color: linear-gradient(342deg, rgba(160,88,245,1) 0%, rgba(255,135,222,1) 65%);
+    animation: heart 1s forwards;
 }
 .hearts__block:hover .empty-heart{
     display: none;
+}
+@keyframes heart {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
 }
 }
