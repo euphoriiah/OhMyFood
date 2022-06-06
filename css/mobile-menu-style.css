@@ -132,7 +132,9 @@
         overflow: hidden;
         flex-direction: row;
         justify-content: space-between;
+        transition: transform 330ms ease-in-out;
     }
+    
     .dishes__part i{
         display: none;
     }
@@ -142,10 +144,16 @@
         padding: 20px; 
         background-color: #99E2D0;
         margin-left: 0;
-        
-    
+        animation: slide 0.5s;
     }
-    
+    @keyframes slide {
+        0% {
+            transform: scaleX(0);
+        }
+        100% {
+            transform: scaleX(1);
+        }     
+    }
     .dishes-name__part p{
         display: flex;
         margin: 0;
@@ -156,9 +164,16 @@
         font-weight: bold;
         margin-top: 10px;
         margin-bottom: 5px;
+        margin-left: 10px;
     }
     .price__part{
+    margin-right: 10px;
+    }
+    .price__part:hover{
+    display: flex;
+    margin-left: 0;
     margin-right: 0;
+    flex-wrap:nowrap;
     }
 
 
