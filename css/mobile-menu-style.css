@@ -123,24 +123,43 @@
 
     main section .dishes__part{
         display: flex;
-        display: 100%;
-        flex-direction: column;
         background-color: #FFF;
         border-radius: 20px;
         margin-bottom: 10px;
         margin-left: 20px;
+        margin-right: 20px;
+        position: relative;
+        overflow: hidden;
+        flex-direction: row;
+        justify-content: space-between;
     }
+    .dishes__part i{
+        display: none;
+    }
+    .dishes__part:hover i{
+        display: flex;
+        color: var(--background-color);
+        padding: 20px; 
+        background-color: #99E2D0;
+        margin-left: 0;
+        
+    
+    }
+    
     .dishes-name__part p{
+        display: flex;
         margin: 0;
+        width: 100%;
     }
+    
     h3,.price__part{
         font-weight: bold;
-        margin-left: 20px;
-        margin-top: 0;
+        margin-top: 10px;
         margin-bottom: 5px;
     }
-
-
+    .price__part{
+    margin-right: 0;
+    }
 
 
 }
