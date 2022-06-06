@@ -123,6 +123,9 @@ nav form h1 span{
 nav form h2 span{
     font-size: 15px;
 }
+.btn p{
+    margin-top: 0;
+}
 form .btn{
     width: 50%;
     margin-left: 120px;
