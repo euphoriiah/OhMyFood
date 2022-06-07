@@ -1,0 +1,360 @@
+@media (min-width: 992px){
+/*VARIABLE*/
+:root{
+    --primary-color:#9356DC;
+    --secondary-color:#FF79DA;
+    --tertiary-color: #99E2D0;
+    --tertiary-alt-color:#eaeaea;
+    --variable-grey-color:#cfcfcf;
+    --background-color:#F6F6F6;
+    --bg-footer-loader: #353535;
+
+}
+
+    /*BODY*/
+* {
+box-sizing: border-box;
+list-style-type: none;
+font-family: 'Roboto', sans-serif;
+font-weight: 500;
+font-size: 15px;
+scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+body{
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+    margin: 0;
+}
+   /*HEADER*/
+
+header{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+header .logo__banner{
+    width: 100%;
+    background-color: #FFF;
+    position: absolute;
+    justify-content: center;
+    margin-top: 10px;
+    display: flex;
+    position: 0;
+}
+header img{
+    width: 60%;
+    margin-left: 90px;
+    padding-bottom: 0;
+}
+nav{
+    margin-top: 70px;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--background-color);
+    padding-bottom: 100px;
+}
+label{
+    display: flex;
+}
+label i{
+    font-size: 20px;
+    margin-top: 15px;
+    background-color: var(--tertiary-alt-color);
+    position: relative;
+    margin-left: 46%;
+    color: rgb(55, 54, 54);
+    z-index: 1;
+}
+form input{
+    width: 100%;
+    background-color: var(--tertiary-alt-color);
+    padding: 15px;
+    padding-left: 48%;
+    border-top-width: 5px;
+    border-color: #fbfbfb25;
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+    position: absolute;
+    
+}
+nav form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+nav form .nav__title{
+    display: flex;
+    justify-content: center;
+}
+nav form h1{
+    flex-direction: column;
+    width: 20%;
+    font-size:25px;
+    font-weight:900;
+    margin-top: 50px;
+    align-items: center;
+    margin-left: 40%;
+}
+nav form h2{
+    width: 100%;
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    align-items: center;
+}
+nav form span{
+    margin-left: 2px;
+
+}
+nav form h1 span{
+    font-size:25px;
+    font-weight:900;
+}
+nav form h2 span{
+    font-size: 15px;
+}
+.btn p{
+    margin-top: 0;
+}
+form .btn{
+    width: 30%;
+    margin-left: 35%;
+	border: none;
+    justify-content: center;
+    align-items: center;
+	border-radius: 30px;
+    padding-top: 1em;
+    color: var(--background-color);
+	background: linear-gradient(#FF79DA,#9356DC);
+	box-shadow: 0 0 16px grey;
+    cursor: pointer;
+    transform: scale(1);
+    transition-duration: 800ms;
+	}
+.btn:hover{
+    transform: scale(1.2);
+}
+        /*MAIN*/
+
+        h1, h3{
+            font-size: large;
+            font-weight: bolder;
+        }
+        main{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        main .main-section{
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+        }
+        main section .working_title{
+            margin-top: 30px;
+            margin-left: 45%;
+            margin-bottom: 30px;
+        }
+        main .working-element{
+            display: flex;
+            width: 30%;
+            flex-direction: row;
+            background-color: var(--background-color);
+            border: none; 
+            border-radius:20px;
+            margin:15px;
+            box-shadow: 0 0 10px rgb(180, 180, 180);
+            margin-left: 35%;
+            transform: scale(1);
+        }
+        main .working-element:hover{
+            background-color: #e5c0db69;
+            transform: scale(1.05);
+            color: #9356DC;
+        }
+        main .working-element i{
+            margin-left: 40px;
+            margin-right: 15px;
+            margin-top: 20px;
+        }
+        main .working-element .number-circle{
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 100%;
+            background-color: var(--primary-color);
+            position: absolute;
+            margin-left: -10px;
+            margin-top: 10px;
+            color: var(--background-color);
+        }
+        main .working-element .comment{
+         padding-top: 0;
+         align-items: center;
+         margin-top: 20px;
+         color: #000;
+        }
+        
+        
+        /*RESTAURENT CARDS SECTION*/
+        h1{
+            margin-left: 46%;
+        }
+        main .restaurant__section{
+            display: flex;
+            flex-direction:column;
+            width: 100%;
+            
+        }
+        main .card__container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            background-color: var(--background-color);
+            align-items: center;
+            padding-bottom: 50px;
+            justify-content: space-between;
+        }
+         main .card__container .card{       
+                display: flex;
+                flex-direction: column;
+                background-color: #fff;
+                width: 21%;
+                border-radius: 25px;
+                box-shadow: #dddcdc 0 0 15px;
+                margin-top: 40px;
+                margin-left: 20px;
+                margin-right: 20px;
+         }
+         main .card__container img {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 200px;
+            border-radius: 20px 20px 0 0;
+            margin-top: 5px;
+            object-fit: cover;
+            padding-top: 0;
+            margin-top: 0;
+        }
+        section .card-picture{
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        section .card .new-sticker{
+            display: flex;
+            position:absolute;
+            background-color: var(--tertiary-color);
+            margin-right: 10px;
+            margin-top: 20px;
+            padding: 5px;
+            animation: clignote 2s linear infinite;
+              }
+         @keyframes clignote {  
+        50% { opacity: 0; }
+        }
+        
+        .card .card-title{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .hearts__block i{
+            font-size: 30px;
+            margin-top: 20px;
+            margin-right: 20px;
+        }
+        .hearts__block .full-heart{
+        display: none;
+        }
+        .hearts__block:hover .full-heart {
+            display: block;
+            color: rgb(160,88,245);
+            animation: heart 1s forwards;
+            text-transform: uppercase;
+            background: linear-gradient(to right, var(--primary-color) 0%, var(--secondary-color) 100%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+        }
+        .hearts__block:hover .empty-heart{
+            display: none;
+        }
+        @keyframes heart {
+            0% {
+              opacity: 0;
+            }
+            100% {
+              opacity: 1;
+            }
+        }
+        .card .card-title .title{
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+        }
+        h3{
+            margin-left: 15px;
+            margin-bottom: 5px;
+        }
+        h4{
+        margin-left: 15px;
+        margin-top: 0;
+        }
+        /*FOOTER*/
+        h5{
+            font-family: 'Shrikhand';
+            margin-top: 20px;
+            margin-left: 35px;
+            margin-bottom: 5px;
+        }
+        footer{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            background-color: var(--bg-footer-loader);
+            color: var(--background-color);
+        }
+        footer ul{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-bottom:20px;
+            margin-top: 0;
+            
+        }
+        footer ul li a{
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+            padding: 0;
+            color: var(--background-color);
+        }
+        footer ul li p{
+            margin-top:5px;
+            margin-bottom: 5px;
+        }
+        footer ul li i{
+            margin-top: 5px;
+            margin-right: 8px;
+        }
+        footer .footer-a__link{
+            margin-bottom: 5px;
+        }
+        footer .footer__link{
+        margin-bottom: 0;
+        }
+}
