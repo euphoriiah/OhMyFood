@@ -149,32 +149,33 @@ form .btn{
         h1, h3{
             font-size: large;
             font-weight: bolder;
+            margin-right: 30px;
         }
         main{
             width: 100%;
             display: flex;
             flex-direction: column;
         }
-        main .main-section{
+        main .working{
             display: flex;
             width: 100%;
             flex-direction: row;
+            justify-content: flex-start;
+
         }
         main section .working_title{
             margin-top: 30px;
-            margin-left: 45%;
             margin-bottom: 30px;
         }
         main .working-element{
             display: flex;
-            width: 30%;
+            width: 28%;
             flex-direction: row;
             background-color: var(--background-color);
             border: none; 
             border-radius:20px;
             margin:15px;
             box-shadow: 0 0 10px rgb(180, 180, 180);
-            margin-left: 35%;
             transform: scale(1);
         }
         main .working-element:hover{
@@ -206,10 +207,19 @@ form .btn{
          color: #000;
         }
         
+        .main_sections{
+            display: flex;
+            flex-direction: column;
+        }
+        h1{
+            margin-left: 20px;
+        }
         
         /*RESTAURENT CARDS SECTION*/
-        h1{
-            margin-left: 46%;
+        #restau__title{
+            margin-left: 45%;
+            margin-top: 40px;
+            font-size: x-large;
         }
         main .restaurant__section{
             display: flex;
@@ -222,21 +232,19 @@ form .btn{
             flex-direction: row;
             flex-wrap: wrap;
             width: 100%;
-            background-color: var(--background-color);
-            align-items: center;
             padding-bottom: 50px;
-            justify-content: space-between;
+            margin-top: 20px;
         }
          main .card__container .card{       
                 display: flex;
                 flex-direction: column;
                 background-color: #fff;
-                width: 21%;
+                width: 45%;
                 border-radius: 25px;
                 box-shadow: #dddcdc 0 0 15px;
                 margin-top: 40px;
-                margin-left: 20px;
                 margin-right: 20px;
+                margin-left: 2.5em;
          }
          main .card__container img {
             display: flex;
