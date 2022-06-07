@@ -97,12 +97,13 @@ nav form .nav__title{
 }
 nav form h1{
     flex-direction: column;
-    width: 20%;
+    width: 30%;
     font-size:25px;
     font-weight:900;
     margin-top: 50px;
     align-items: center;
-    margin-left: 40%;
+    margin-left: 35%;
+    flex-wrap: nowrap;
 }
 nav form h2{
     width: 100%;
