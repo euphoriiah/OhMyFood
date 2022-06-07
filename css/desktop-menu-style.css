@@ -70,10 +70,9 @@
         height: 55%;
     }
     #note-enchantee__pic{
-        height: 40%;
-        overflow: hidden;
-        
+        height: 38%;
     }
+
     main .menu{
         width: 100%;
         display: flex;

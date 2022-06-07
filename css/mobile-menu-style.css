@@ -38,8 +38,8 @@
         display: flex;
         width: 100%;
         flex-direction: column;
-        height: 10%;
         position: relative;
+        padding-bottom:50px;
     }
     header p{
         font-size: xx-large;
@@ -48,7 +48,7 @@
         background-color: #FFF;
         position: absolute;
         justify-content: center;
-        margin-top: 10px;
+        margin-top: 0px;
         display: flex;
     }
     header nav{
@@ -73,8 +73,8 @@
         height: 70%;
     }
     #note-enchantee__pic{
-        height: 45%;
-    }
+        height: 44%;
+    } 
     main .menu{
         width: 100%;
         display: flex;
