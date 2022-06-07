@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (max-width: 992px) {
 
     /*VARIABLE*/
     :root{
@@ -226,8 +226,8 @@
     }
 /*BTN ORDER*/
     .btn{
-    width: 50%;
-    margin-left: 120px;
+    width: 30%;
+    margin-left: 40%;
 	border: none;
     display: flex;
     align-items: center;
@@ -246,7 +246,7 @@
     transform: scale(1.2);
 }
 .btn p{
-    margin-left: 80px;
+    margin-left: 30%;
     margin-top: 0;
 }
 h5{
