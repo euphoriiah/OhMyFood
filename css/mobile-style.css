@@ -48,7 +48,6 @@ header .logo__banner{
     justify-content: center;
     margin-top: 10px;
     display: flex;
-    position: 0;
 }
 header img{
     width: 60%;
