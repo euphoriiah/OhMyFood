@@ -226,8 +226,8 @@
     }
 /*BTN ORDER*/
     .btn{
-    width: 30%;
-    margin-left: 40%;
+    width: 180px;
+    margin-left: 35%;
 	border: none;
     display: flex;
     align-items: center;
@@ -246,7 +246,9 @@
     transform: scale(1.2);
 }
 .btn p{
-    margin-left: 25%;
+    display: flex;
+    justify-content: center;
+    margin-left: 24%;
     margin-top: 0;
 }
 h5{
