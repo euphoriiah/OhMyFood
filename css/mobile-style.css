@@ -68,7 +68,7 @@ label i{
     margin-top: 15px;
     background-color: var(--tertiary-alt-color);
     position: relative;
-    margin-left: 43%;
+    margin-left: 38%;
     color: rgb(55, 54, 54);
     z-index: 1;
 }
@@ -76,7 +76,7 @@ form input{
     width: 100%;
     background-color: var(--tertiary-alt-color);
     padding: 15px;
-    padding-left: 48%;
+    padding-left: 45%;
     border-top-width: 5px;
     border-color: #fbfbfb25;
     border-left: none;
@@ -244,8 +244,14 @@ main .card__container{
         background-color: #fff;
         width: 90%;
         border-radius: 25px;
-        box-shadow: #dddcdc 0 0 15px;
+        box-shadow: #dddcdcab 0 0 15px;
         margin-top: 20px;
+        transform: scale(1);
+        
+ }
+ main .card__container .card:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 16px rgb(99, 99, 99);
  }
  main .card__container img {
     display: flex;
