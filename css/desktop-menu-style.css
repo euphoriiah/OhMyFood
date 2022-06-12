@@ -149,6 +149,9 @@
         animation: animation-card 500ms both;
         transition: transform 300ms ease;
     }
+    main section .dishes_lne p{
+        margin-bottom: -5px;
+    }
     @keyframes animation-card {
         0% {
           transform: translateY(20px);
