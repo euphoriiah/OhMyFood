@@ -129,8 +129,6 @@
             }
         }
 
-    /* DISHES PART * il y a des choses a modifier ici */
-
     main section .dishes__part{
         display: flex;
         background-color: #FFF;

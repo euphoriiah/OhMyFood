@@ -145,8 +145,21 @@
         justify-content: space-between;
         white-space: nowrap;
         height: 23%;
-        width: 118%;
+        width: 450px;
+        animation: animation-card 500ms both;
+        transition: transform 300ms ease;
     }
+    @keyframes animation-card {
+        0% {
+          transform: translateY(20px);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0px);
+          opacity: 1;
+        }
+    }
+
     .dishes__part:hover .price__part{
         transform: translateX(-80px);
         padding-left: 90px;
