@@ -56,7 +56,6 @@ header img{
 }
 nav{
     margin-top: 70px;
-    justify-content: center;
     width: 100%;
     background-color: var(--background-color);
     padding-bottom: 100px;
@@ -69,7 +68,7 @@ label i{
     margin-top: 15px;
     background-color: var(--tertiary-alt-color);
     position: relative;
-    margin-left: 32%;
+    margin-left: 43%;
     color: rgb(55, 54, 54);
     z-index: 1;
 }
@@ -77,19 +76,19 @@ form input{
     width: 100%;
     background-color: var(--tertiary-alt-color);
     padding: 15px;
-    padding-left: 40%;
+    padding-left: 48%;
     border-top-width: 5px;
     border-color: #fbfbfb25;
     border-left: none;
     border-bottom: none;
     border-right: none;
-    position: absolute;
-    
+    position: absolute;   
 }
 nav form{
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 nav form .nav__title{
     display: flex;
@@ -102,6 +101,7 @@ nav form h1{
     font-weight:900;
     margin-top: 50px;
     align-items: center;
+    align-self: center;
 }
 nav form h2{
     width: 100%;
@@ -110,6 +110,7 @@ nav form h2{
     flex-direction: column;
     margin-bottom: 30px;
     align-items: center;
+    align-self: center;
 }
 nav form span{
     margin-left: 2px;
@@ -124,13 +125,12 @@ nav form h2 span{
 }
 form .btn__block{
     width: 260px;
-    margin-left: 30%;
     padding: 20px;
 	border: none;
     justify-content: center;
     align-items: center;
+    align-self: center;
 	border-radius: 30px;
-    padding: 1em;
     color: var(--background-color);
 	background: linear-gradient(#FF79DA,#9356DC);
 	box-shadow: 0 0 16px grey;
@@ -139,19 +139,22 @@ form .btn__block{
     transition-duration: 800ms;
 	}
     .btn__block p{
+        align-items: center;
         margin-left: 16%;
         margin-top: 0;
         margin-bottom: 0;
         padding: 0;
         font-family: 'Roboto';
     }
-    .btn{
+    button{
         width: 100%;
         display: none;
     }
     
 .btn__block:hover{
-    transform: scale(1.2);
+    transform: scale(1.05);
+    background: linear-gradient(#ff8fdf,#b577fc);
+    box-shadow: 0 0 16px rgb(99, 99, 99);
 }
         /*MAIN*/
 

@@ -89,6 +89,7 @@ nav form{
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 nav form .nav__title{
     display: flex;
@@ -125,7 +126,6 @@ nav form h2 span{
 }
 form .btn__block{
     width: 330px;
-    margin-left: 38%;
     padding: 20px;
 	border: none;
     justify-content: center;
@@ -139,6 +139,7 @@ form .btn__block{
     transform: scale(1);
     transition-duration: 800ms;
     margin-top: 20px;
+    align-self: center;
 	}
     .btn__block p{
         margin-left: 58px;
@@ -153,7 +154,9 @@ form .btn__block{
     }
     
 .btn__block:hover{
-    transform: scale(1.2);
+    transform: scale(1.05);
+    background: linear-gradient(#fc8cdc,#9c69db);
+	box-shadow: 0 0 16px rgb(54, 54, 54);
 }
         /*MAIN*/
 
