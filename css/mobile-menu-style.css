@@ -240,7 +240,9 @@
     margin-top: 10px;
 	}
 .btn:hover{
-    transform: scale(1.2);
+    transform: scale(1.05);
+    background: linear-gradient(#ff8fdf,#b577fc);
+    box-shadow: 0 0 16px rgb(99, 99, 99);
 }
 .btn p{
     display: flex;
