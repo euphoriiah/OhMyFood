@@ -124,8 +124,8 @@ nav form h2 span{
     font-size: 15px;
 }
 form .btn__block{
-    width: 20%;
-    margin-left: 41%;
+    width: 330px;
+    margin-left: 38%;
     padding: 20px;
 	border: none;
     justify-content: center;
@@ -138,6 +138,7 @@ form .btn__block{
     cursor: pointer;
     transform: scale(1);
     transition-duration: 800ms;
+    margin-top: 20px;
 	}
     .btn__block p{
         margin-left: 58px;

@@ -69,7 +69,7 @@ label i{
     margin-top: 15px;
     background-color: var(--tertiary-alt-color);
     position: relative;
-    margin-left: 155px;
+    margin-left: 32%;
     color: rgb(55, 54, 54);
     z-index: 1;
 }
@@ -123,7 +123,7 @@ nav form h2 span{
     font-size: 15px;
 }
 form .btn__block{
-    width: 50%;
+    width: 260px;
     margin-left: 30%;
     padding: 20px;
 	border: none;
@@ -139,7 +139,7 @@ form .btn__block{
     transition-duration: 800ms;
 	}
     .btn__block p{
-        margin-left: 58px;
+        margin-left: 16%;
         margin-top: 0;
         margin-bottom: 0;
         padding: 0;
