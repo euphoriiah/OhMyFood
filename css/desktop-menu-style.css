@@ -145,8 +145,8 @@
         justify-content: space-between;
         white-space: nowrap;
         height: 23%;
-        width: 450px;
-        animation: animation-card 500ms both;
+        width: 28em;
+        animation: animation-card 300ms both;
         transition: transform 300ms ease;
     }
     main section .dishes_lne p{
@@ -162,7 +162,38 @@
           opacity: 1;
         }
     }
-
+    /* ANIMATION DISHES FADE IN*/
+     .dishes__part--1 {
+        animation-delay: 50ms;
+      }
+      .dishes__part--2 {
+        animation-delay: 100ms;
+      }
+      .dishes__part--3 {
+        animation-delay: 150ms;
+      }
+      .dishes__part--4 {
+        animation-delay: 200ms;
+      }
+      .dishes__part--5 {
+        animation-delay: 250ms;
+      }
+      .dishes__part--6 {
+        animation-delay: 300ms;
+      }
+      .dishes__part--7 {
+        animation-delay: 350ms;
+      }
+      .dishes__part--8 {
+        animation-delay: 400ms;
+      }
+      .dishes__part--9 {
+        animation-delay: 450ms;
+      }
+      .dishes__part--10 {
+        animation-delay: 500ms;
+      }
+      /*DISHES PART*/
     .dishes__part:hover .price__part{
         transform: translateX(-80px);
         padding-left: 90px;
