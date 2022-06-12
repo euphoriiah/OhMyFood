@@ -353,9 +353,7 @@ form .btn__block{
         /*FOOTER*/
         h5{
             font-family: 'Shrikhand';
-            margin-top: 20px;
-            margin-left: 35px;
-            margin-bottom: 5px;
+            align-self: center;
         }
         footer{
             width: 100%;
@@ -366,7 +364,8 @@ form .btn__block{
         }
         footer ul{
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            justify-content: space-evenly;
             width: 100%;
             margin-bottom:20px;
             margin-top: 0;
