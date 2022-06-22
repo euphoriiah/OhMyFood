@@ -230,13 +230,11 @@
 	background: linear-gradient(#FF79DA,#9356DC);
 	box-shadow: 0 0 16px grey;
     cursor: pointer;
-    transform: scale(1);
-    transition-duration: 800ms;
     margin-bottom: 30px;
     margin-top: 10px;
 	}
 .btn:hover{
-    transform: scale(1.05);
+
     background: linear-gradient(#ff8fdf,#b577fc);
     box-shadow: 0 0 16px rgb(99, 99, 99);
 }

@@ -135,8 +135,6 @@ form .btn__block{
 	background: linear-gradient(#FF79DA,#9356DC);
 	box-shadow: 0 0 16px grey;
     cursor: pointer;
-    transform: scale(1);
-    transition-duration: 800ms;
 	}
     .btn__block p{
         align-items: center;
@@ -152,7 +150,6 @@ form .btn__block{
     }
     
 .btn__block:hover{
-    transform: scale(1.05);
     background: linear-gradient(#ff8fdf,#b577fc);
     box-shadow: 0 0 16px rgb(99, 99, 99);
 }
