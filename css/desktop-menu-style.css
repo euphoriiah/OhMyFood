@@ -209,6 +209,7 @@
         font-size: 35px;
         background-clip:text ;
         -webkit-background-clip: text;
+        background-clip: text;
         color: transparent;
         -webkit-text-stroke-width: 2px;
         -webkit-text-stroke-color: #99E2D0;
