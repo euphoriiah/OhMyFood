@@ -217,6 +217,7 @@
         border-bottom-style: solid;
         width: 15%;
     }
+    
 /*BTN ORDER*/
     .btn{
     width: 180px;
@@ -236,7 +237,7 @@
 .btn:hover{
 
     background: linear-gradient(#ff8fdf,#b577fc);
-    box-shadow: 0 0 16px rgb(99, 99, 99);
+    box-shadow: 0 0 20px rgb(83, 83, 83);
 }
 .btn p{
     display: flex;

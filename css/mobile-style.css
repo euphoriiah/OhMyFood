@@ -124,7 +124,7 @@ nav form h2 span{
     font-size: 15px;
 }
 form .btn__block{
-    width: 260px;
+    width: 250px;
     padding: 20px;
 	border: none;
     justify-content: center;
@@ -151,7 +151,7 @@ form .btn__block{
     
 .btn__block:hover{
     background: linear-gradient(#ff8fdf,#b577fc);
-    box-shadow: 0 0 16px rgb(99, 99, 99);
+    box-shadow: 0 0 20 rgb(83, 83, 83);
 }
         /*MAIN*/
 

@@ -145,7 +145,7 @@
         justify-content: space-between;
         white-space: nowrap;
         height: 23%;
-        width: 28em;
+        width: 20em;
         animation: animation-card 300ms both;
         transition: transform 300ms ease;
     }
@@ -235,7 +235,7 @@
     .dishes__part .dishes-check{
     display: flex;
     position: absolute;
-    height: 90px;
+    height: 80px;
     width: 80px;
     background-color: #99E2D0;
     right: 0px;
@@ -250,6 +250,14 @@
         width: 100%;
         overflow: hidden;
         text-overflow: ellipsis;
+}
+.dishes-name__part h3{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.dishes-name__part{
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
     h3,.price__part{
         font-weight: bold;
@@ -288,7 +296,7 @@
 	}
 .btn:hover{
     background: linear-gradient(#ff8fdf,#b577fc);
-    box-shadow: 0 0 16px rgb(99, 99, 99);
+    box-shadow: 0 0 20px rgb(83, 83, 83);
 }
 .btn p{
     margin-left: 26%;
