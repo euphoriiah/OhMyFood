@@ -70,6 +70,9 @@
         height: 60%;
         object-fit: cover;
     }
+    #note_enchantee{
+        height: 50%;
+    }
     main .menu{
         width: 100%;
         display: flex;
