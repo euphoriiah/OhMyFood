@@ -279,30 +279,37 @@
         width: 15%;
     }
 /*BTN ORDER*/
-    .btn{
-    width: 300px;
-    margin-left: 40%;
+.btn__block{
+    width: 200px;
+    padding: 20px;
+    margin-bottom: 30px;
 	border: none;
-    display: flex;
+    justify-content: center;
     align-items: center;
 	border-radius: 30px;
-    padding-top: 1em;
+    padding: 1em;
     color: var(--background-color);
 	background: linear-gradient(#FF79DA,#9356DC);
 	box-shadow: 0 0 16px grey;
     cursor: pointer;
-    margin-bottom: 30px;
-    margin-top: 10px;
+    transition-duration: 800ms;
+    align-self: center;
 	}
-.btn:hover{
-    background: linear-gradient(#ff8fdf,#b577fc);
-    box-shadow: 0 20px 20px 0 rgb(131, 131, 131);
-}
-.btn p{
-    margin-left: 26%;
-    margin-top: 0;
-    font-size: x-large;
-}
+    .btn__block p{
+        margin-left: 44px;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+        font-family: 'Roboto';
+    }
+    .btn{
+        width: 100%;
+        display: none;
+    }
+    .btn__block:hover{
+        background: linear-gradient(#fc8cdc,#9c69db);
+        box-shadow: 0 20px 20px 0 rgb(131, 131, 131);
+    }
 /*FOOTER*/
 
 h5{
