@@ -33,61 +33,238 @@ body{
     margin: 0;
 }
 /*spinner*/
-.spinner div{
-width:100px;
-height:100px;
-border-radius:100%;
-position:absolute;
-border: 1px solid rgb(156, 95, 253);
-animation: up 1s;
-animation-iteration-count: infinite;
-transition:2s;
-border-bottom:none;
-border-right:none;
-animation-timing-function:linear;
-margin-left: -70px;
-margin-top: -70px;
-left:50%;
-top:50%; 
+body, html {
+      background: rgb(255, 255, 255);
+      position: relative;
+      width: 100%;
+      height: 100%;
     }
-    
-    @keyframes up{
-     from{transform:rotate(0deg);}
-     50%{transform:rotate(180deg);}
-     100%{transform:rotate(360deg);}
+
+    .loading-container {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #ffffffea;
+      z-index: 3;
     }
-    #img2{
-    width:90px;
-    height:90px;
-    left:50.35%;
-    top:50.7%;
-    animation-delay:.2s;
-  
+
+    .loading {
+      width: 64px;
+      height: 64px;
+      position: absolute;
+      transform: rotate(45deg);
+      top: 50%;
+      left: 50%;
     }
-      #img3{
-    width:80px;
-    height:80px;
-    left:50.70%;
-    top:51.4%;
-    animation-delay:.4s;
+
+    .loading div {
+      width: 32px;
+      height: 32px;
+      position: absolute;
     }
-      #img4{
-     width:70px;
-    height:70px;
-    left:51.05%;
-    top:52.1%;
-    animation-delay:.6s;
-  
+
+    .l1 div,
+    .l2 div,
+    .l3 div,
+    .l4 div {
+      width: 100%;
+      height: 100%;
+      background-color: #3498db;
     }
-      #img5{
-    width:60px;
-    height:60px;
-    left:51.40%;
-    top:52.8%;
-    animation-delay:.8s;
-  
+
+    .l1 {
+      transform: translate(0, 0);
     }
-   /*HEADER*/
+
+    .l2 {
+      transform: translate(0, 32px);
+    }
+
+    .l3 {
+      transform: translate(32px, 0px);
+    }
+
+    .l4 {
+      transform: translate(32px, 32px);
+    }
+
+    @keyframes rot1 {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      40% {
+        transform: rotate(0deg);
+      }
+
+      50% {
+        transform: rotate(0deg);
+      }
+
+      60% {
+        transform: rotate(90deg);
+      }
+
+      100% {
+        transform: rotate(90deg);
+      }
+    }
+
+    @keyframes rot2 {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      40% {
+        transform: rotate(0deg);
+      }
+
+      50% {
+        transform: rotate(0deg);
+      }
+
+      60% {
+        transform: rotate(-90deg);
+      }
+
+      100% {
+        transform: rotate(-90deg);
+      }
+    }
+
+    @keyframes rot3 {
+      0% {
+        transform: rotate(45deg);
+      }
+
+      35% {
+        transform: rotate(45deg);
+      }
+
+      65% {
+        transform: rotate(405deg);
+      }
+
+      100% {
+        transform: rotate(405deg);
+      }
+    }
+
+    @keyframes l1-rise {
+      0% {
+        transform: translate(0px, 0px);
+      }
+
+      30% {
+        transform: translate(-8px, -8px);
+      }
+
+      70% {
+        transform: translate(-8px, -8px);
+      }
+
+      100% {
+        transform: translate(0px, 0px);
+      }
+    }
+
+    @keyframes l2-rise {
+      0% {
+        transform: translate(0, 32px);
+      }
+
+      30% {
+        transform: translate(-8px, 40px);
+      }
+
+      70% {
+        transform: translate(-8px, 40px);
+      }
+
+      100% {
+        transform: translate(0, 32px);
+      }
+    }
+
+    @keyframes l3-rise {
+      0% {
+        transform: translate(32px, 0px);
+      }
+
+      30% {
+        transform: translate(40px, -8px);
+      }
+
+      70% {
+        transform: translate(40px, -8px);
+      }
+
+      100% {
+        transform: translate(32px, 0px);
+      }
+    }
+
+    @keyframes l4-rise {
+      0% {
+        transform: translate(32px, 32px);
+      }
+
+      30% {
+        transform: translate(40px, 40px);
+      }
+
+      70% {
+        transform: translate(40px, 40px);
+      }
+
+      100% {
+        transform: translate(32px, 32px);
+      }
+    }
+
+    @keyframes color {
+      0% {
+        background-color: #ff7ed4;
+      }
+
+      50% {
+        background-color: #b65ffd;
+      }
+
+      100% {
+        background-color: #7df7d2;
+      }
+    }
+
+    .l1 {
+      animation: l1-rise 2s ease 0s infinite;
+    }
+
+    .l2 {
+      animation: l2-rise 2s ease 0s infinite;
+    }
+
+    .l3 {
+      animation: l3-rise 2s ease 0s infinite;
+    }
+
+    .l4 {
+      animation: l4-rise 2s ease 0s infinite;
+    }
+
+    .l1 div,
+    .l4 div {
+      animation: rot1 2s ease 0s infinite, color 3s linear 0s infinite;
+    }
+
+    .l2 div,
+    .l3 div {
+      animation: rot2 2s ease 0s infinite, color 3s linear 0s infinite;
+    }
+/*HEADER*/
 
 header{
     display: flex;

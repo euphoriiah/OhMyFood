@@ -23,18 +23,39 @@
         <!--STYLE-->
         <link rel="stylesheet" href="./css/mobile-style.css">
         <link rel="stylesheet" href="./css/desktop-style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
 
             <!--BODY-->
             
 <body>
-    <div class="spinner">
-        <div id="img1" class="img"></div>
-        <div id="img2" class="img"></div>
-        <div id="img3" class="img"></div>
-        <div id="img4" class="img"></div>
-        <div id="img5" class="img"></div>
-    </div>
+    <div class="loading-container">
+        <div class="loading">
+          <div class="l1">
+            <div></div>
+          </div>
+          <div class="l2">
+            <div></div>
+          </div>
+          <div class="l3">
+            <div></div>
+          </div>
+          <div class="l4">
+            <div></div>
+          </div>
+        </div>
+      </div>
+      <script>
+        $(window).on('load',function(){
+            $(".loading").fadeOut(6000);
+            $(".loading-container").fadeOut(6000);
+            $(".l1").fadeOut(6000);
+            $(".l2").fadeOut(6000);
+            $(".l3").fadeOut(6000);
+            $(".l4").fadeOut(6000);
+            $(".content").fadeIn(8000);
+        });
+    </script>
             <!--HEADER-->
         <header>
             <div class="logo__banner">
@@ -175,5 +196,6 @@
                 <li class="footer-a__link"> <a href="mailto:contact@ohmyfood.com"> Contacts </a> </li>
             </ul>
         </footer>
+        
 </body>
 </html>
