@@ -670,10 +670,10 @@ a {
         animation-delay: 200ms;
       }
       #dishes_3{
-        animation-delay: 600ms;
+        animation-delay: 400ms;
       }
       #dishes_3bis{
-        animation-delay: 800ms;
+        animation-delay: 600ms;
       }
       #dishes_4{
         animation-delay: 0s;
@@ -682,7 +682,7 @@ a {
         animation-delay: 200ms;
       }
       #dishes_6{
-        animation-delay: 600ms;
+        animation-delay: 400ms;
       }
       #dishes_7{
         animation-delay: 0s;
@@ -691,7 +691,7 @@ a {
         animation-delay: 200ms;
       }
       #dishes_9{
-        animation-delay: 600ms;
+        animation-delay: 400ms;
       }
 
       @keyframes itemAppear {
