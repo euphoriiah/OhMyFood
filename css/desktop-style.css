@@ -51,7 +51,7 @@ a {
       background-color: #ffffffea;
       z-index: 3;
       animation: fadeout;
-      animation-duration: 5s;
+      animation-duration: 4s;
       -webkit-animation-fill-mode: forwards;
       animation-fill-mode: forwards;
     }
@@ -274,12 +274,12 @@ a {
 
     .l1 div,
     .l4 div {
-      animation: rot1 2s ease 0s infinite, color 3s linear 0s infinite;
+      animation: rot1 2s ease 0s infinite, color 1s linear 0s infinite;
     }
 
     .l2 div,
     .l3 div {
-      animation: rot2 2s ease 0s infinite, color 3s linear 0s infinite;
+      animation: rot2 1s ease 0s infinite, color 1s linear 0s infinite;
     }
 /*HEADER*/
 
