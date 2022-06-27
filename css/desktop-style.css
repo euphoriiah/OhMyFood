@@ -101,7 +101,7 @@ a {
         opacity: 1;
       }
       100%{
-        opacity: 0;
+        opacity: 0.6;
         display: none;
         z-index: -1;
       }
