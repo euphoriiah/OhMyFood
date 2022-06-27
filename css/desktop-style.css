@@ -10,6 +10,7 @@
     --bg-footer-loader: #353535;
 
 }
+/**************************************************************KEYFRAMES********************************************************************/
     /*BODY*/
 * {
 box-sizing: border-box;
@@ -474,14 +475,7 @@ a {
             margin-top: 20px;
             animation: fadein 4s;
         }
-        @keyframes fadein {
-            from {
-                opacity:0;
-            }
-            to {
-                opacity:1;
-            }
-        }
+       
 
          main .card__container .card{       
                 display: flex;
@@ -650,7 +644,7 @@ a {
           display: flex;
           flex-direction: row;
           justify-content: space-between;
-      }    
+      }   
       main section .dishes__part{
           display: flex;
           background-color: #FFF;
@@ -664,21 +658,49 @@ a {
           white-space: nowrap;
           height: 23%;
           width: 25em;
-          animation: animation-card 2s both;
-          transition: transform 1s ease;
+          animation: itemAppear .6s;
+          animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+          animation-fill-mode: both;
+          transform: scale(0);
+      }
+      #dishes_1{
+        animation-delay: 0s;
+      }
+      #dishes_2{
+        animation-delay: 200ms;
+      }
+      #dishes_3{
+        animation-delay: 600ms;
+      }
+      #dishes_4{
+        animation-delay: 0s;
+      }
+      #dishes_5{
+        animation-delay: 200ms;
+      }
+      #dishes_6{
+        animation-delay: 600ms;
+      }
+      #dishes_7{
+        animation-delay: 0s;
+      }
+      #dishes_8{
+        animation-delay: 200ms;
+      }
+      #dishes_9{
+        animation-delay: 600ms;
+      }
+
+      @keyframes itemAppear {
+        0% {
+          transform: scale(0)
+        }
+        100% {
+          transform: scale(1);
+        }
       }
       main section .dishes_lne p{
           margin-bottom: -5px;
-      }
-      @keyframes animation-card {
-          0% {
-            transform: translateY(30px);
-            opacity: 0;
-          }
-          100% {
-            transform: translateY(0px);
-            opacity: 1;
-          }
       }
   /********************************************************BUTTON************************************************/
       .menu .btn__block{
