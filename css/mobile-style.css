@@ -26,7 +26,7 @@ a {
     text-decoration: none;
     color: #000;
 }
-body{
+.main_body{
     display: block;
     flex-direction: column;
     justify-content: center;
@@ -36,12 +36,12 @@ body{
 }
    /*HEADER*/
 
-header{
+.main_header{
     display: flex;
     width: 100%;
     flex-direction: column;
 }
-header .logo__banner{
+.main_header .logo__banner{
     width: 100%;
     background-color: #FFF;
     position: absolute;
@@ -49,21 +49,21 @@ header .logo__banner{
     margin-top: 10px;
     display: flex;
 }
-header img{
+.main_header img{
     width: 60%;
     margin-left: 90px;
     padding-bottom: 0;
 }
-nav{
+.main_header nav{
     margin-top: 70px;
     width: 100%;
     background-color: var(--background-color);
     padding-bottom: 100px;
 }
-label{
+.main_header label{
     display: flex;
 }
-label i{
+.main_header label i{
     font-size: 20px;
     margin-top: 15px;
     background-color: var(--tertiary-alt-color);
@@ -72,7 +72,7 @@ label i{
     color: rgb(55, 54, 54);
     z-index: 1;
 }
-form input{
+.main_header form input{
     width: 100%;
     background-color: var(--tertiary-alt-color);
     padding: 15px;
@@ -84,17 +84,18 @@ form input{
     border-right: none;
     position: absolute;   
 }
-nav form{
+.main_header nav form{
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-nav form .nav__title{
+.main_header nav form .nav__title{
     display: flex;
     justify-content: center;
 }
-nav form h1{
+.main_header nav form h1{
+    font-family: 'Roboto';
     flex-direction: column;
     width: 100%;
     font-size:25px;
@@ -103,7 +104,7 @@ nav form h1{
     align-items: center;
     align-self: center;
 }
-nav form h2{
+.main_header nav form h2{
     width: 100%;
     font-size: 17px;
     display: flex;
@@ -112,18 +113,18 @@ nav form h2{
     align-items: center;
     align-self: center;
 }
-nav form span{
+.main_header nav form span{
     margin-left: 2px;
 
 }
-nav form h1 span{
+.main_header nav form h1 span{
     font-size:25px;
     font-weight:900;
 }
-nav form h2 span{
+.main_header nav form h2 span{
     font-size: 15px;
 }
-form .btn__block{
+.btn__block{
     width: 250px;
     padding: 20px;
 	border: none;
@@ -135,8 +136,9 @@ form .btn__block{
 	background: linear-gradient(#FF79DA,#9356DC);
 	box-shadow: 0 0 16px grey;
     cursor: pointer;
+    transition-duration: 800ms;
 	}
-    .btn__block p{
+.btn__block p{
         align-items: center;
         margin-left: 16%;
         margin-top: 0;
@@ -156,25 +158,25 @@ form .btn__block{
 }
         /*MAIN*/
 
-h1, h3{
+.main_page section h1, .title h3{
     font-size: large;
     font-weight: bolder;
 }
-main{
+.main_page{
     width: 100%;
     display: flex;
     flex-direction: column;
 }
-main .main-section{
+.main_page .main-section{
     display: flex;
     flex-direction: column;
 }
-main section h1{
+.main_page section h1{
     margin-top: 30px;
     margin-left: 40px;
     margin-bottom: 30px;
 }
-main .working-element{
+.main_page .working-element{
     display: flex;
     width: 80%;
     flex-direction: row;
@@ -187,17 +189,17 @@ main .working-element{
     margin-left: 45px;
     transform: scale(1);
 }
-main .working-element:hover{
+.main_page .working-element:hover{
     background-color: #e5c0db69;
     transform: scale(1.05);
     color: #9356DC;
 }
-main .working-element i{
+.main_page .working-element i{
     margin-left: 40px;
     margin-right: 15px;
     margin-top: 20px;
 }
-main .working-element .number-circle{
+.main_page .working-element .number-circle{
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 10px;
@@ -209,7 +211,7 @@ main .working-element .number-circle{
     margin-top: 10px;
     color: var(--background-color);
 }
-main .working-element .comment{
+.main_page .working-element .comment{
  padding-top: 0;
  align-items: center;
  margin-top: 20px;
@@ -219,12 +221,12 @@ main .working-element .comment{
 
 /*RESTAURENT CARDS SECTION*/
 
-main .restaurant__section{
+.main_page .restaurant__section{
     display: flex;
     flex-direction: column;
     width: 100%; 
 }
-main .card__container{
+.main_page .card__container{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -234,7 +236,7 @@ main .card__container{
     align-items: center;
     padding-bottom: 50px;
 }
- main .card__container .card{       
+.main_page .card__container .card{       
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -246,11 +248,11 @@ main .card__container{
         transform: scale(1);
         
  }
- main .card__container .card:hover{
+ .main_page .card__container .card:hover{
     transform: scale(1.02);
     box-shadow: 0 0 16px rgb(99, 99, 99);
  }
- main .card__container img {
+ .main_page .card__container img {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -261,11 +263,11 @@ main .card__container{
     padding-top: 0;
     margin-top: 0;
 }
-section .card-picture{
+.main_page section .card-picture{
     display: flex;
     flex-direction: row-reverse;
 }
-section .card .new-sticker{
+.main_page section .card .new-sticker{
     display: flex;
     position:absolute;
     background-color: var(--tertiary-color);
@@ -315,17 +317,179 @@ display: none;
 .card .card-title .title{
     display: flex;
     flex-direction: column;
+}
+.card-title .title h3{
+    margin-top: 10px;
+    margin-bottom: 3px;
+    margin-left: 25px;
+}
+.card-title .title h4{
+    margin-top: 10px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+/**************************************************MENU RESTAURANT STYLE***********************************************/
+.menu_body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
     margin: 0;
-    padding: 0;
 }
-h3{
-    margin-left: 15px;
-    margin-bottom: 5px;
+/*HEADER*/
+.menu_header{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+    padding-bottom:50px;
 }
-h4{
-margin-left: 15px;
-margin-top: 0;
+.menu_header p{
+    font-size: xx-large;
+    font-family: 'Shrikhand';
+    width: 100%;
+    background-color: #FFF;
+    position: absolute;
+    justify-content: center;
+    margin-top: 0px;
+    display: flex;
 }
+.menu_header nav{
+    position: absolute;
+    margin-top: 20px;
+    z-index: 2;
+}
+.menu_header nav i{
+    font-size: x-large;
+    margin-left: 10px;
+}
+/*BACKGROUND*/
+
+.presentation__picture{
+    width: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+.presentation__picture img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+#note_enchantee{
+    height: 85%;
+}
+main .menu{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color);
+    padding-top:20px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-top: -50px;
+   position: absolute;
+}
+
+.menu__top h1{
+    font-family: 'Shrikhand';
+    font-size: 35px;
+    margin-left: 20px;
+    margin-top: 0;
+}
+.menu__top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+main section .dishes__part{
+    display: flex;
+    background-color: #FFF;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+    overflow: hidden;
+    flex-direction: row;
+    justify-content: space-between;
+    white-space: nowrap;
+    height: 8%;
+}
+.dishes__part:hover .price__part{
+    transform: translateX(-80px);
+    padding-left: 90px;
+}
+.dishes__part:hover .check{
+    animation: check-rotate 800ms both alternate ease;
+}
+.dishes__part:hover .dishes-check{
+    transform: translateX(0px);
+}
+.check {
+    position: absolute;
+    font-size: 35px;
+    background-clip:text ;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #99E2D0;
+    background-color: white;
+  }
+  @keyframes check-rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+.dishes__part i{
+    display: none;
+}
+.dishes__part:hover i{
+    display: flex;
+    color: var(--background-color);
+    padding: 20px; 
+    margin-left: 0;
+}
+.dishes__part .dishes-check{
+display: flex;
+position: absolute;
+height: 90px;
+width: 80px;
+background-color: #99E2D0;
+right: 0px;
+ top: 0px;
+transform: translateX(100px);
+transition: transform 300ms ease-out;
+}
+.dishes-name__part p{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.dishes-name__part h3,.price__part{
+    font-weight: bold;
+    transition: all 300ms ease-out;
+    display: block;
+    padding-left: 10px;
+    margin-bottom: 0;
+}
+.price__part{
+margin-right: 10px;
+margin-top: 25px;
+}
+.menu_a h2{
+    margin-left: 20px;
+    padding-bottom: 10px;
+    border-bottom: var(--tertiary-color);
+    border-bottom-style: solid;
+    width: 15%;
+}
+
 /*FOOTER*/
 h5{
     font-family: 'Shrikhand';

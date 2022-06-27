@@ -26,7 +26,7 @@
         text-decoration: none;
         color: #000;
     }
-    body{
+    .main_body{
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -34,14 +34,14 @@
         margin: 0;
     }
     /*HEADER*/
-    header{
+    .menu_header{
         display: flex;
         width: 100%;
         flex-direction: column;
         position: relative;
         padding-bottom:50px;
     }
-    header p{
+    .menu_header p{
         font-size: xx-large;
         font-family: 'Shrikhand';
         width: 100%;
@@ -51,12 +51,12 @@
         margin-top: 0px;
         display: flex;
     }
-    header nav{
+    .menu_header nav{
         position: absolute;
         margin-top: 20px;
         z-index: 2;
     }
-    header nav i{
+    .menu_header nav i{
         font-size: x-large;
         margin-left: 10px;
     }
