@@ -1,4 +1,4 @@
-@media (min-width: 992px){
+@media (min-width: 769px){
 /*VARIABLE*/
 :root{
     --primary-color:#9356DC;
@@ -101,7 +101,7 @@ a {
         opacity: 1;
       }
       100%{
-        opacity: 0.6;
+        opacity: 0.5;
         display: none;
         z-index: -1;
       }
@@ -625,7 +625,7 @@ a {
       }
       .presentation__picture img{
           width: 100%;
-          height: 60%;
+          height: 800px;
           object-fit: cover;
       }
       #note_enchantee{
@@ -639,7 +639,7 @@ a {
           padding-top:20px;
           border-top-left-radius: 30px;
           border-top-right-radius: 30px;
-          margin-top: -50px;
+          margin-top: -150px;
           position: absolute;
       }
       main .menu_a{
@@ -664,6 +664,7 @@ a {
       main section .dishes__part{
           display: flex;
           background-color: #FFF;
+          flex-wrap: nowrap;
           border-radius: 20px;
           margin-bottom: 10px;
           margin-left: 0px;
@@ -673,7 +674,7 @@ a {
           justify-content: space-between;
           white-space: nowrap;
           height: 23%;
-          width: 25em;
+          width: 93%;
           animation: itemAppear .6s;
           animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
           animation-fill-mode: both;
@@ -769,7 +770,7 @@ a {
       .check {
           position: absolute;
           font-size: 35px;
-          background-clip:text ;
+          background-clip:text;
           -webkit-background-clip: text;
           background-clip: text;
           color: transparent;
