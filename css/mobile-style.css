@@ -153,10 +153,9 @@ a {
     
 .btn__block:hover{
     background: linear-gradient(#ff8fdf,#b577fc);
-    box-shadow: 0 0 20 rgb(83, 83, 83);
     box-shadow: 0 20px 20px 0 rgb(131, 131, 131);
 }
-        /*MAIN*/
+/***********************************************MAIN********************************************************************/
 
 .main_page section h1, .title h3{
     font-size: large;
@@ -564,7 +563,6 @@ margin-top: 25px;
     
 .menu .btn__block:hover{
     background: linear-gradient(#ff8fdf,#b577fc);
-    box-shadow: 0 0 20 rgb(83, 83, 83);
     box-shadow: 0 20px 20px 0 rgb(131, 131, 131);
 }
 
