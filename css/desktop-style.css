@@ -629,9 +629,6 @@ a {
           height: 800px;
           object-fit: cover;
       }
-      #note_enchantee{
-          height: 50%;
-      }
       main .menu{
           width: 100%;
           display: flex;
