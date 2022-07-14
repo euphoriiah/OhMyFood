@@ -177,7 +177,7 @@
     }
     .main_page .working-element{
         display: flex;
-        width: 50%;
+        width: 90%;
         flex-direction: row;
         align-items:center;
         background-color: var(--background-color);
@@ -185,8 +185,8 @@
         border-radius:20px;
         margin: 15px;
         box-shadow: 0 0 10px rgb(180, 180, 180);
-        margin-left: 24%;
         transform: scale(1);
+        margin-left: 5%;
     }
     .main_page .working-element:hover{
         background-color: #e5c0db69;
@@ -468,6 +468,10 @@
     .dishes__part:hover .dishes-check{
         transform: translateX(0px);
     }
+    .dishes__part {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
     .check {
         position: absolute;
         font-size: 35px;
@@ -520,6 +524,10 @@
         display: block;
         padding-left: 10px;
         margin-bottom: 0;
+    }
+    .dishes-name__part{
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     .price__part{
     margin-right: 10px;

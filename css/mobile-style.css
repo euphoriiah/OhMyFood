@@ -510,7 +510,7 @@ transition: transform 300ms ease-out;
     margin-left: 10px;
     margin-bottom: 10px;
     margin-top: 5px;
-    width: 100%;
+    width: 98%;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -521,6 +521,14 @@ transition: transform 300ms ease-out;
     padding-left: 10px;
     margin-bottom: 0;
 }
+.dishes-name__part{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.dishes-name__part h3{
+      overflow: hidden;
+      text-overflow: ellipsis;
+  }
 .price__part{
 margin-right: 10px;
 margin-top: 25px;
